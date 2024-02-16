@@ -173,7 +173,7 @@ const Login = () => {
         // Redirect to the normal user landing page
         navigate('/avatardemo');
       }
-    }, 5000);
+    });
   };
     return (
         <>

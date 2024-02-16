@@ -84,8 +84,6 @@ const Adminpage = () => {
 
   return (
     <div className="admin-page" >
-      
-
       <section>
         <h2>Shop Details</h2>
         <table>
