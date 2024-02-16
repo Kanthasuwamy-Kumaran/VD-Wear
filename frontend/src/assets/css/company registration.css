@@ -15,7 +15,7 @@
     border-radius: 20px;
     padding: 30px;
     margin: 0 15px;
-    border: solid 1px #388880;
+    /* border: solid 1px #23A2E1; */
     box-shadow: 0 5px 10px #0000004f;
     background-color: #15161b;
     /* background: linear-gradient(90deg, rgba(14, 12, 19, 0.507) 0%, rgba(4, 3, 14, 0.185) 100%); */
@@ -142,7 +142,7 @@ form .fields .input-field{
     margin: 25px 0;
     transition: all 0.3s linear;
     cursor: pointer;
-    background: linear-gradient(72deg, rgb(74, 185, 174) 0%, #404bad 100%);
+    background: #0b3f59;
 }
 
 .container2 form .btnText{
@@ -151,7 +151,7 @@ form .fields .input-field{
 }
 form button:hover{
     
-    background-color: #8d0000;
+    background-color:#23A2E1;
 }
 form button i,
 form .backBtn i{

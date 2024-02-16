@@ -11,7 +11,7 @@
     border-radius: 15px;
     transform: translate(-50%, -50%);
     /* background: rgba(0, 0, 0, 0.75); */
-    border: solid 1px #388880;
+    /* border: solid 1px #23A2E1; */
     background: linear-gradient(90deg, rgba(14, 12, 19, 0.507) 0%, rgba(4, 3, 14, 0.185) 100%);
 }
 
@@ -77,11 +77,11 @@ form .button1 {
     margin: 25px 0 10px;
     cursor: pointer;
     transition: 0.1s ease;
-    background: linear-gradient(90deg, rgb(74, 185, 174) 0%, #404bad 100%);
+    background: #0b3f59;
 }
 
 form button:hover {
-    background: linear-gradient(-90deg, rgb(76, 192, 180) 0%, rgb(64, 75, 173) 100%);
+    background: #2386b8;
 }
 
 .form-wrapper a {
