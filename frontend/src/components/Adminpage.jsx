@@ -83,8 +83,8 @@ const Adminpage = () => {
   };
 
   return (
-    <div className="admin-page" style={{background:"red", height:"100%"}}>
-      <h1>Admin Page</h1>
+    <div className="admin-page" >
+      
 
       <section>
         <h2>Shop Details</h2>

@@ -6,10 +6,10 @@ import Login from './components/Login'
 import { Route,Routes} from 'react-router-dom';
 // import Navbarhome from './components/Navbar'
 import Avatardemo from './components/Avatardemo';
-import Shopregister from './components/Shopregister';
+// import Shopregister from './components/Shopregister';
 import CompanyRegistration from './components/company registration ';
 import Userprofile from './components/Userprofile';
-// import Adminpage from './components/Adminpage';
+import Admin1 from './components/Adminpage';
 
 import Apps from './components/admin/Apps'
 
@@ -28,6 +28,7 @@ function App() {
       <Route exact path='/userprofile' Component={Userprofile}/>
       <Route exact path='/admin' Component={Apps}/>
       <Route exact path='/shopregister' Component={CompanyRegistration}/>
+      <Route exact path='/user' Component={Admin1}/>
      
     </Routes>
 
