@@ -1,0 +1,152 @@
+
+
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 70px;
+    width: 450px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.75); */
+    border: solid 1px #388880;
+    background: linear-gradient(90deg, rgba(14, 12, 19, 0.507) 0%, rgba(4, 3, 14, 0.185) 100%);
+}
+
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-wrapper form {
+    margin: 25px 0 65px;
+}
+
+form .form-control1 {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form-control1 input {
+    
+    height: 100%;
+    width: 100%;
+    background: #2221364b;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.form-control1 input:is(:focus, :valid) {
+    background: #1d1b2e85;
+    padding: 16px 20px 0;
+}
+
+.form-control1 label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+.form-control1 input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form .button1 {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    /* background: #e50914; */
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    background: linear-gradient(90deg, rgb(74, 185, 174) 0%, #404bad 100%);
+}
+
+form button:hover {
+    background: linear-gradient(-90deg, rgb(76, 192, 180) 0%, rgb(64, 75, 173) 100%);
+}
+
+.form-wrapper a {
+    text-decoration: none;
+}
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.form-wrapper :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember-me {
+    display: flex;
+}
+
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+
+form .form-help :where(label, a) {
+    font-size: 0.9rem;
+}
+
+.form-wrapper p a {
+    color: #fff;
+}
+
+.form-wrapper small {
+    display: block;
+    margin-top: 15px;
+    color: #b3b3b3;
+}
+
+.form-wrapper small a {
+    color: #0071eb;
+}
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    nav, .form-wrapper {
+        padding: 20px;
+    }
+
+    nav a img {
+        width: 140px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        top: 43%;
+    }
+
+    .form-wrapper form {
+        margin: 25px 0 40px;
+    }
+}
