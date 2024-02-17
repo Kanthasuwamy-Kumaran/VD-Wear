@@ -22,7 +22,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <Link to="/user">
+                <Link to="/userdetails">
                 <a href="#1">
                     <BsFillArchiveFill className='icon'/> Users Details
                 </a>
@@ -33,10 +33,13 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                     <BsFillGrid3X3GapFill className='icon'/> Web Articles
                 </a>
             </li>
+
             <li className='sidebar-list-item'>
+                <Link to="/userdetails">
                 <a href="#1">
                     <BsPeopleFill className='icon'/> Shops Details
                 </a>
+                </Link>
             </li>
             <li className='sidebar-list-item'>
                 <a href="#1">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Adminpage = () => {
+const Admin1 = () => {
   const [shopDetails, setShopDetails] = useState([]);
   const [users, setUsers] = useState([]);
 
@@ -8,7 +8,7 @@ const Adminpage = () => {
     // Fetch Shop Details
     const fetchShopDetails = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/admin/shopsprofile', {
+        const response = await fetch('http://localhost:6999/api/admin/shopsprofile', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('adminToken')}`, // You need to implement admin token storage
           },
@@ -26,7 +26,7 @@ const Adminpage = () => {
     // Fetch All Users
     const fetchAllUsers = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/admin/usersprofile', {
+        const response = await fetch('http://localhost:6999/api/admin/usersprofile', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('adminToken')}`, // You need to implement admin token storage
           },
@@ -48,7 +48,7 @@ const Adminpage = () => {
   const handleDeleteShop = async (shopId) => {
     try {
       // /${shopId}
-      const response = await fetch(`http://localhost:3001/api/admin/deleteshop`, {
+      const response = await fetch(`http://localhost:6999/api/admin/deleteshop`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('adminToken')}`, // You need to implement admin token storage
@@ -66,7 +66,7 @@ const Adminpage = () => {
 
   const handleDeleteUser = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/admin/deleteuser/${userId}`, {
+      const response = await fetch(`http://localhost:6999/api/admin/deleteuser/${userId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('adminToken')}`, // You need to implement admin token storage
@@ -135,4 +135,4 @@ const Adminpage = () => {
   );
 };
 
-export default Adminpage;
+export default Admin1;

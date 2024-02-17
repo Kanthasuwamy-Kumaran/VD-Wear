@@ -26,7 +26,7 @@
 //         const { name, email, password } = user;
 //         // console.log("Request Body:", { name, email, password });
 //         try {
-//             const res = await fetch('http://localhost:3001/api/user/register', {
+//             const res = await fetch('http://localhost:6999/api/user/register', {
 //                 method: "POST",
 //                 headers: {
 //                     "Content-Type": "application/json"
@@ -133,7 +133,7 @@ function Register() {
   const registerUser = async (userData) => {
     
     try {
-      const response = await fetch('http://localhost:3001/api/user/register', {
+      const response = await fetch('http://localhost:6999/api/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

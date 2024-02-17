@@ -17,7 +17,7 @@ export default function CompanyRegistration() {
 
   const registerShop = async (userData) => { 
     try {
-      const response = await fetch('http://localhost:3001/api/user/shopregister', {
+      const response = await fetch('http://localhost:6999/api/user/shopregister', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ export default function CompanyRegistration() {
       }
       else{
         window.alert("Shop Registered Successfully");
-        navigate('/')
+        navigate('avatardemo')
       }
       const data = await response.json();
       return data;
@@ -59,7 +59,7 @@ export default function CompanyRegistration() {
     <>
       <div className='registration-body'>
         <div className="container2">
-          <header>Registration</header>
+          <header>Shop Registration</header>
 
           <form onSubmit={handleFormSubmit}>
             <div className="form first">

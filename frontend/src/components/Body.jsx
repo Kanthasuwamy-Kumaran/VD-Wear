@@ -87,7 +87,7 @@ export default function Body() {
 
                             <div class="hero-content">
 
-                                <p class="hero-subtitle">Virtual Dress Room</p>
+                                <p class="hero-subtitle">Virtual Trial Room</p>
 
                                 <h1 class="h1 hero-title">
                                     Create <span class="span">Avatar</span> yourOwn
