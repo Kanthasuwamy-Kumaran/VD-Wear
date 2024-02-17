@@ -242,7 +242,7 @@ export default function Avatardemo() {
 
             <Iframe url="https://nolimite.readyplayer.me?frameApi"
                 width="100%"
-                height="1000px"
+                height="900px"
                 allow="camera *; microphone *; clipboard-write"    
                  />
                  
